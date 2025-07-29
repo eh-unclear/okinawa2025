@@ -1,4 +1,17 @@
 @charset "UTF-8";
+html {
+  font-size: 16px; /* 基準サイズを16pxに設定 */
+}
+
+p {
+  font-size: 1rem; /* 16px */
+}
+
+h1 {
+  font-size: 1.3rem; /* 20.8px */
+  font-weight: normal;
+}
+
 body {
   background-image: url(../img/砂浜.png);
   background-repeat: repeat;
