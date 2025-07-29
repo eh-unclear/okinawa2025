@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+// 背景設定
+// ---------------------------------------------
+
+body{
+    background-image: url(../img/砂浜.png);
+    background-repeat: repeat;
+    color: #333333;
+    background-attachment: fixed;
+    z-index: 1;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: .7s;
+}
+
+// ナビ
+// ---------------------------------------------
+.header {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+    .hamburger-morph {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+
+        &__icon {
+            width: 100%;
+            height: 100%;
+        }
+
+        &__line {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 6;
+            transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:nth-child(1) {
+                stroke-dasharray: 60 207;
+            }
+            &:nth-child(2) {
+                stroke-dasharray: 60 60;
+            }
+            &:nth-child(3) {
+                stroke-dasharray: 60 207;
+            }
+        }
+    }
+
+    .hamburger-morph.active .hamburger-morph__line:nth-child(1) {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+    }
+
+    .hamburger-morph.active .hamburger-morph__line:nth-child(2) {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+    }
+
+    .hamburger-morph.active .hamburger-morph__line:nth-child(3) {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+    }
+
+    .nav-morph {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(28, 173, 252, 0.98);
+        clip-path: circle(0% at calc(100% - 44px) 44px);
+        transition: clip-path 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 900;
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        &__item {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+
+            :hover {
+                color: #fc9a1c;
+            }
+        }
+
+        &__link {
+            position: relative;
+            display: inline-block;
+            padding: 20px;
+            font-size: 28px;
+            color: #fff;
+            text-decoration: none;
+            overflow: hidden;
+            
+        }
+        
+    }
+
+    .nav-morph.active {
+        clip-path: circle(150% at calc(100% - 44px) 44px);
+    }
+
+    .nav-morph.active .nav-morph__item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-morph.active .nav-morph__item:nth-child(1) { transition-delay: 0.3s; }
+    .nav-morph.active .nav-morph__item:nth-child(2) { transition-delay: 0.4s; }
+    .nav-morph.active .nav-morph__item:nth-child(3) { transition-delay: 0.5s; }
+    .nav-morph.active .nav-morph__item:nth-child(4) { transition-delay: 0.6s; }
+
+}
+
+
+
+// FV
+// ---------------------------------------------
+
+.fv{
+    max-width: 450px;
+    margin: 0 auto;
+    position: relative;
+    @media screen and (max-width:768px){
+        max-width: none;
+        width: 100%;
+    }
+    &_img {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+// コンテンツ
+// ---------------------------------------------
+
+.article{
+    max-width: 450px;
+    margin: 0 auto;
+    position: relative;
+    @media screen and (max-width:768px){
+        max-width: none;
+        width: 100%;
+    }
+    .section{
+        padding: 20px;
+
+        .ttl {
+            width: 250px;
+            margin: 0 auto 40px;
+
+        }
+    }
+}
+
+#sec01 {
+    background-color: #fff;
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    color: #2e2e2e;
+    margin-top: -40px;
+    padding: 80px 0 80px;
+    border-radius: 50px 50px 0 0;
+}
+
+#sec02 {
+    background: #fff;
+    padding: 40px 0 80px;
+    
+    .flight{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+#sec03 {
+    background-image: url(../img/スケジュール_bg.png);
+    background-size:cover;
+    background-repeat: repeat;
+    margin-top: -40px;
+    padding: 80px 0 80px;
+
+    .schedule {
+        width: 90%;
+        margin: 0 auto;
+
+        &_day {
+            margin-bottom: 20px;
+
+            &:nth-child(4) {
+                width: 104%;
+            }
+        }
+    }
+}
+
+#sec05 {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 80px 0 20px;
+
+    .hotel {
+        width: 90%;
+        margin: 0 auto 40px;
+
+        ul {
+            list-style: none; 
+            padding: 0;
+        }
+
+        .ttl_sub {
+            font-size: 20px;
+            span {font-size: 16px;}
+        }
+
+        .hotel_txt {
+            padding: 10px 0;
+            font-size: 14px;
+
+            .txt-hide-1 {
+                display: none;
+            }
+            .txt-hide-2 {
+                display: none;
+            }
+
+            button.more-1,
+            button.more-2 {
+                width: 120px;
+                margin: 20px auto;
+                display: block;
+                background-color: #eee;
+                color: #2e2e2e;
+                padding:10px 15px;
+                border: none;
+                outline: 0;
+                transition: .5s;
+                -erbkit-transition: .5s;
+            }
+                
+            button.more-1::after,
+            button.more-2::after {
+                content: "MORE";
+                transition: .2s;
+                -erbkit-transition: .2s;
+            }
+
+            button.more-1.on-click::after,
+            button.more-2.on-click::after{
+                content: "CLOSE";
+            }
+        }
+    }
+}
+#sec06 {
+    background-color: none;
+    padding: 80px 0 80px;
+}
+
+@keyframes wave {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(100deg);
+	}
+}
+
+
+// フェードイン
+// ---------------------------------------------
+
+
+.effect-fade {
+  opacity: 0;
+  transform: translate(0, 100px); /* フェードインで動く高さを指定 */
+  transition: all 2000ms; /* フェードインにかかる時間を指定 */
+}
+.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
+}

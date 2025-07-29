@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mtradブログ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <button class="hamburger-morph" aria-label="メニュー" aria-controls="morph-menu" aria-expanded="false">
+                <svg class="hamburger-morph__icon" width="48" height="48" viewBox="0 0 100 100">
+                <path class="hamburger-morph__line" d="M 20,29 H 80 C 80,29 94.5,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="hamburger-morph__line" d="M 20,50 H 80" />
+                <path class="hamburger-morph__line" d="M 20,71 H 80 C 80,71 94.5,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+
+            <nav id="morph-menu" class="nav-morph" aria-hidden="true">
+                <div class="nav-morph__wrapper">
+                    <ul class="nav-morph__list">
+                        <li class="nav-morph__item">
+                            <a href="#top" class="nav-morph__link">
+                                <span class="nav-morph__text">トップ</span>
+                            </a>
+                        </li>
+                        <li class="nav-morph__item">
+                            <a href="#sec01" class="nav-morph__link">
+                                <span class="nav-morph__text">コンセプト</span>
+                            </a>
+                        </li>
+                        <li class="nav-morph__item">
+                            <a href="#sec02" class="nav-morph__link">
+                                <span class="nav-morph__text">行きの飛行機情報</span>
+                            </a>
+                        </li>
+                        <li class="nav-morph__item">
+                            <a href="#sec03" class="nav-morph__link">
+                                <span class="nav-morph__text">スケジュール</span>
+                            </a>
+                        </li>
+                        <li class="nav-morph__item">
+                            <a href="#sec04" class="nav-morph__link">
+                                <span class="nav-morph__text">帰りの飛行機情報</span>
+                            </a>
+                        </li>
+                        <li class="nav-morph__item">
+                            <a href="#sec05" class="nav-morph__link">
+                                <span class="nav-morph__text">宿泊先</span>
+                            </a>
+                        </li>
+                        <li class="nav-morph__item">
+                            <a href="#sec06" class="nav-morph__link">
+                                <span class="nav-morph__text">持ち物</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>  
+
+        <div class="fv" id="top">
+            <div class="fv_img"><img src="./img/FV.png" alt=""></div>
+        </div>
+
+        <div class="article">
+            <div class="section" id="sec01">
+                <p>ただいま沖縄。<br>本気で遊ぶ、大人の修学旅行。<br>〜いまのメルクを味わい尽くそう〜</p>
+            </div>
+            <div class="section" id="sec02">
+                <div class="flight effect-fade"><img src="./img/飛行機情報01.png" alt=""></div>
+            </div>
+            <div class="section effect-fade" id="sec03">
+                <div class="ttl effect-fade"><img src="./img/ttl_01.png" alt=""></div>
+                <div class="schedule">
+                    <p class="schedule_day effect-fade"><img src="./img/day01.png" alt=""></p>
+                    <p class="schedule_day effect-fade"><img src="./img/day02.png" alt=""></p>
+                    <p class="schedule_day effect-fade"><img src="./img/day03.png" alt=""></p>
+                    <p class="schedule_day effect-fade"><img src="./img/day04.png" alt=""></p>
+                    <p class="schedule_day effect-fade"><img src="./img/day05.png" alt=""></p>
+                    <p class="schedule_day effect-fade"><img src="./img/day06.png" alt=""></p>
+                </div>
+            </div>
+            <div class="section" id="sec04">
+                <div class="flight effect-fade"><img src="./img/飛行機情報02.png" alt=""></div>
+            </div>
+            <div class="section effect-fade" id="sec05">
+                <div class="ttl effect-fade"><img src="./img/ttl_02.png" alt=""></div>
+                <div class="hotel effect-fade">
+                    <p class="ttl_sub">前半<span>（8/2~8/3）</span></p>
+                    <ul class="slick hotel_img">
+                        <li><img alt="画像1" src="./img/ホテル_01_01.png" /></li>
+                        <li><img alt="画像1" src="./img/ホテル_01_02.png" /></li>
+                        <li><img alt="画像1" src="./img/ホテル_01_03.png" /></li>
+                        <li><img alt="画像1" src="./img/ホテル_01_04.png" /></li>
+                    </ul>
+                    <div class="hotel_txt">
+                        <div class="txt-show-1">
+                        ボードゲームやダーツが遊びたい放題！室内BBQ可！<br>
+                        <br>
+                        ■チェックイン/アウト■ <br>
+                        IN：15:00〜 OUT：〜10:00 <br>
+                        </div>
+                        
+                        <div class="txt-hide-1">
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【バスルーム】<br>
+                        ヘアドライヤー<br>
+                        ボディソープ<br>
+                        給湯<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【アメニティ】<br>
+                        シャンプー/コンディショナー<br>
+                        ボディーソープ<br>
+                        歯ブラシセット<br>
+                        バスタオル<br>
+                        フェイスタオル<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【寝室とランドリー】<br>
+                        洗濯機<br>
+                        衣類用乾燥ラック<br>
+                        衣類収納スペース<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【キッチンとダイニング】<br>
+                        フルキッチン<br>
+                        冷蔵庫<br>
+                        電子レンジ<br>
+                        基本的な調理器具
+                        食器&カトラリー<br>
+                        Otherのガスコンロ<br>
+                        電気スポット<br>
+                        炊飯器<br>
+                        バーベキュー用具<br>
+                        ダイニングテーブル<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【特徴】<br>
+                        バーベキューグリル<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【寝室(最大20名)】<br>
+                        寝室1(洋室)：ダ⁠ブ⁠ル⁠ベ⁠ッ⁠ド×3⁠<br>
+                        寝室2(和室)：ダ⁠ブ⁠ル⁠ベ⁠ッ⁠ド×2・⁠布団×6<br>
+                        寝室3(洋室)：ダ⁠ブ⁠ル⁠ベ⁠ッ⁠ド×2・ベビーベッド<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【❌含まれないもの❌】<br>
+                        必需品<br>
+                        シャンプーシャンプー<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        <a target=”_blank” href="https://x.gd/V5GF7">https://x.gd/V5GF7</a>
+                        </div>
+                        <button class="more-1"></button>
+                    </div>
+                </div>
+                <div class="hotel effect-fade">
+                    <p class="ttl_sub">後半<span>（8/4~8/5）</span></p>
+                    <ul class="slick hotel_img">
+                        <li><img alt="画像1" src="./img/ホテル_02_01.png" /></li>
+                        <li><img alt="画像1" src="./img/ホテル_02_02.png" /></li>
+                        <li><img alt="画像1" src="./img/ホテル_02_03.png" /></li>
+                        <li><img alt="画像1" src="./img/ホテル_02_04.png" /></li>
+                    </ul>
+                    <div class="hotel_txt">
+                        <div class="txt-show-2">
+                        オーシャンビュージャグジーヴィラ！<br>
+                        <br>
+                        ■チェックイン/アウト■ <br>
+                        IN：15:00〜 OUT：〜10:00 <br>
+                        </div>
+                        
+                        <div class="txt-hide-2">
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【バスルーム】<br>
+                        バスタブ<br>
+                        ヘアドライヤー<br>
+                        清掃用品<br>
+                        シャンプー<br>
+                        コンディショナー<br>
+                        ボディソープ<br>
+                        ウォシュレット（ビデ）<br>
+                        給湯<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【寝室とランドリー】<br>
+                        無料洗濯機<br>
+                        乾燥機<br>
+                        必需品（タオル、シーツ、石鹸、トイレットペーパー）<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【キッチンとダイニング】<br>
+                        フルキッチン<br>
+                        冷蔵庫<br>
+                        電子レンジ<br>
+                        食器&カトラリー<br>
+                        電気ポット<br>
+                        コーヒーメーカー<br>
+                        ワイングラス<br>
+                        トースター<br>
+                        炊飯器<br>
+                        ダイニングテーブル<br>
+                        コー​​ヒー<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【特徴】<br>
+                        ビーチアクセス（ビーチフロント）<br>
+                        露天風呂（温泉以外）・ジャグジー<br>
+                        敷地内無料駐⁠車ス⁠ペ⁠ー⁠ス<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        【寝室(最大16名)】<br>
+                        寝室1(洋室)：ダブルベッド×2<br>
+                        寝室2(洋室)：ダ⁠ブ⁠ル⁠ベ⁠ッ⁠ド×2⁠<br>
+                        寝室3(和室)：布団×4<br>
+                        寝室4(和室)：布団×4<br>
+                        リビング：ソ⁠フ⁠ァベッ⁠⁠⁠ド×1⁠<br>
+                        ーーーーーーーーーーーーーーーーーーー<br>
+                        <a target=”_blank” href="https://x.gd/7CaeY">https://x.gd/7CaeY</a>
+                        </div>
+                        <button class="more-2"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="section effect-fade" id="sec06">
+                <div class="ttl effect-fade"><img src="./img/ttl_03.png" alt=""></div>
+                <div class="schedule">
+                    <p class="schedule_day effect-fade"><img src="./img/持ち物.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
