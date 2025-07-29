@@ -3,15 +3,6 @@ html {
   font-size: 16px; /* 基準サイズを16pxに設定 */
 }
 
-p {
-  font-size: 1rem; /* 16px */
-}
-
-h1 {
-  font-size: 1.3rem; /* 20.8px */
-  font-weight: normal;
-}
-
 body {
   background-image: url(../img/砂浜.png);
   background-repeat: repeat;
@@ -178,7 +169,7 @@ body {
   font-family: "Sawarabi Mincho", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
+  font-size: 1.3rem; /* 20.8px */
   text-align: center;
   line-height: 40px;
   color: #2e2e2e;
