@@ -105,7 +105,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 20px;
-  font-size: 28px;
+  font-size: 20px;
   color: #fff;
   text-decoration: none;
   overflow: hidden;
@@ -258,7 +258,7 @@ body {
 }
 
 #sec06 {
-  background-color: none;
+  background: none;
   padding: 80px 0 80px;
 }
 #sec06 .list {
