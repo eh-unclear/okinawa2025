@@ -3,9 +3,6 @@
 
 html {
   font-size: 16px; /* 基準サイズを16pxに設定 */
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -20,15 +17,20 @@ body{
     z-index: 1;
     font-family: 'Noto Sans JP', sans-serif;
     transition: .7s;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 
-    // overflow-x: hidden;
-    // margin: 0;
-    // padding: 0;
-}
+    /*スクロールバー非表示（IE・Edge）*/
+    -ms-overflow-style: none;
+    
+    /*スクロールバー非表示（Firefox）*/
+    scrollbar-width: none;
 
-/* 横スクロールバーを非表示（Chrome, Safari）*/
-::-webkit-scrollbar {
-  display: none;
+    /*スクロールバー非表示（Chrome・Safari）*/
+    ::-webkit-scrollbar{
+        display:none;
+    }
 }
 
 // ナビ
