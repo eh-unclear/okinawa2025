@@ -138,9 +138,9 @@ $(function () {
 $('.slick').slick({
   autoplay:true, // 自動再生を設定
   autoplaySpeed:4000, // スライド切り替えの時間を設定
-  dots:true // インジケーターを表示
+  dots:true, // インジケーターを表示
+  arrows: false // 矢印を非表示にする
 });
-
 
 
 // テキスト表示/非表示

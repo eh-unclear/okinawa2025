@@ -3,10 +3,6 @@ html {
   font-size: 16px; /* 基準サイズを16pxに設定 */
 }
 
-.slick-next {
-  display: none !important;
-}
-
 body {
   background-image: url(../img/砂浜.png);
   background-repeat: repeat;
