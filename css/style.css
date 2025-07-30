@@ -264,6 +264,9 @@ body ::-webkit-scrollbar {
 #sec05 .hotel .hotel_txt button.more-2.on-click::after {
   content: "CLOSE";
 }
+#sec05 .hotel .slick-next {
+  display: none;
+}
 
 #sec06 {
   background: none;

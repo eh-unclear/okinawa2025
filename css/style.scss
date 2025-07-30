@@ -23,7 +23,7 @@ body{
 
     /*スクロールバー非表示（IE・Edge）*/
     -ms-overflow-style: none;
-    
+
     /*スクロールバー非表示（Firefox）*/
     scrollbar-width: none;
 
@@ -303,6 +303,11 @@ body{
             button.more-2.on-click::after{
                 content: "CLOSE";
             }
+        }
+
+        // 画像スライド右ボタン非表示
+        .slick-next {
+            display: none;
         }
     }
 }
