@@ -23,6 +23,11 @@ body{
     padding: 0;
 }
 
+/* 横スクロールバーを非表示（Chrome, Safari）*/
+::-webkit-scrollbar {
+  display: none;
+}
+
 // ナビ
 // ---------------------------------------------
 .header {
