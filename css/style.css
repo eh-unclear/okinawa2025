@@ -262,10 +262,8 @@ body {
   padding: 80px 0 80px;
 }
 #sec06 .list {
-  background-image: url(../img/持ち物.png);
-  background-size: cover;
-  background-repeat: repeat;
-  padding: 80px 0 80px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 @keyframes wave {
