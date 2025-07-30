@@ -7,7 +7,7 @@ html {
 
 // 画像スライド右ボタン非表示
 .slick-next {
-    display: none;
+    display: none !important;
 }
 
 // 背景設定
