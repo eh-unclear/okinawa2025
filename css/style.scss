@@ -5,15 +5,10 @@ html {
   font-size: 16px; /* 基準サイズを16pxに設定 */
 }
 
-// // 画像スライド右ボタン非表示
-// .slick-next {
-//     display: none !important;
-// }
-
 // 背景設定
 // ---------------------------------------------
 
-body{
+body {
     background-image: url(../img/砂浜.png);
     background-repeat: repeat;
     color: #333333;
@@ -182,8 +177,27 @@ body{
             width: 100%;
         }
     }
+    &_txt {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        width: 90%;
+        animation-name: fade-in;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards; 
+    }
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 
 // コンテンツ
@@ -245,10 +259,6 @@ body{
 
         &_day {
             margin-bottom: 20px;
-
-            &:nth-child(4) {
-                width: 104%;
-            }
         }
     }
 }

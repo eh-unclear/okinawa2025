@@ -152,7 +152,26 @@ body ::-webkit-scrollbar {
 .fv_img img {
   width: 100%;
 }
+.fv_txt {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 90%;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .article {
   max-width: 450px;
   margin: 0 auto;
@@ -208,9 +227,6 @@ body ::-webkit-scrollbar {
 }
 #sec03 .schedule_day {
   margin-bottom: 20px;
-}
-#sec03 .schedule_day:nth-child(4) {
-  width: 104%;
 }
 
 #sec05 {
